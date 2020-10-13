@@ -1,0 +1,34 @@
+<div class="container">
+    <h1>{{ bai2 }}</h1>
+    <div class="row">
+      <div class="col-md-2">
+        Nhập x:
+      </div>
+      <div class="col-md-8">
+        <input type="text" placeholder="Nhập x" style="width:100%" [(ngModel)]="x1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2" style="margin-top: 10px;">
+        Nhập n:
+      </div>
+      <div class="col-md-8">
+        <input type="text" placeholder="Nhập n" style="width:100%;margin-top: 10px;" [(ngModel)]="n1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+      <button class="btn btn-primary" (click)="Tinh1()" style="float: right;margin-top: 10px;">Tính</button>
+  
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col-md-10">
+    <p>Kết quả: {{ kq1 }}</p>
+
+    </div>
+  </div>
+ 
+</div>

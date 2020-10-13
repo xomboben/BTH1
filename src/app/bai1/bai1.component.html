@@ -1,0 +1,30 @@
+$ git config --list --show-origin$ git config --list --show-origin$ git config --list --show-origin<div class="container">
+    <h1>{{ bai1 }}</h1>
+    <div class="row">
+      <div class="col-md-2">
+        Nhập x:
+      </div>
+      <div class="col-md-8">
+        <input type="text" placeholder="Nhập x" style="width:100%"  [(ngModel)]="x">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2" style="margin-top: 10px;">
+        Nhập n:
+      </div>
+      <div class="col-md-8">
+        <input type="text" placeholder="Nhập n" style="width:100%;margin-top: 10px;" [(ngModel)]="n">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+      <button class="btn btn-primary" (click)="Tinh()" style="float: right;margin-top: 10px;">Tính</button>
+  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10"><p>Kết quả: {{ kq }}</p></div>
+      
+    </div>
+    </div>

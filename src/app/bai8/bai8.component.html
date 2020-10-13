@@ -1,0 +1,44 @@
+<div class="container">
+    <h1>{{ bai8 }}</h1>
+    <div class="row">
+        <div class="col-md-2">
+            Nhập vào a:
+        </div>
+        <div class="col-md-8">
+            <input type="text"  [(ngModel)]="a" style="width:100%;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            Nhập vào b:
+        </div>
+        <div class="col-md-8">
+            <input type="text"  [(ngModel)]="b" style="width:100%;margin-top: 10px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            Nhập vào c:
+        </div>
+        <div class="col-md-8">
+            <input type="text"  [(ngModel)]="c" style="width:100%;margin-top: 10px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            Nhập vào h:
+        </div>
+        <div class="col-md-8">
+            <input type="text"  [(ngModel)]="h" style="width:100%;margin-top: 10px">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <button class="btn btn-primary" style="float: right;" (click)="ngOnInit()">Tính</button>
+        </div>
+    </div>
+    <div class="row">
+        <span>Kết quả:{{ kq }}</span>
+
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+     <h1>{{ bai5 }}</h1>
+  <div class="row">
+    <div class="col-md-2">
+      Nhập danh sách số:
+    </div>
+    <div class="col-md-8">
+      <input type="text" placeholder="VD:10,5,82" [(ngModel)]="a" style="width:100%">
+    </div>
+
+  </div>
+  <div class="row">
+       <div class="col-md-10">
+    <button class="btn btn-primary" (click)="ChinhPhuong()" style="float: right;margin-top: 10px;">Tìm số chính phương</button>
+
+       </div>
+  </div>
+  <div class="row">
+     <table class="table">
+          <thead>
+               
+                    <th *ngFor="let i of mang">{{i}}</th>
+             
+          </thead>
+         
+     </table>
+   
+  </div>
+</div>

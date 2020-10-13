@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+       <div class="col-md-10">
+           <h1>{{ bai3 }}</h1>
+           <table class="table">
+            <thead>
+              <tr>
+                <th>Họ tên</th>
+                <th>Điểm thi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of name">
+                <td>{{ i.hoten }}</td>
+                <td>{{ i.dthi }}</td>
+              </tr>
+           
+            </tbody>
+          </table>
+          <button class="btn btn-primary" (click)="Sapxep()" style="float:right">Sắp xếp</button>
+       </div>
+    </div>
+</div>

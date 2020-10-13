@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>{{ bai4 }}</h1>
+    <div class="row">
+       <div class="col-md-10">
+           <table class="table">
+            <thead>
+              <tr>
+                <th>Họ tên</th>
+                 <th>Quê quán</th>
+                <th>Điểm thi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of name">
+                <td>{{ i.hoten }}</td>
+                <td>{{ i.quequan }}</td>
+                <td>{{ i.diemthi }}</td>
+              </tr>
+           
+            </tbody>
+          </table>
+          <button class="btn btn-primary" (click)="Loc()" style="float: right;">Lọc</button>
+       </div>
+    </div>
+</div>
